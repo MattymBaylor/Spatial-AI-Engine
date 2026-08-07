@@ -23,16 +23,6 @@ export function CameraRig({ preset, allowManualOrbit = true }: CameraRigProps) {
   const width = useThree((state) => state.size.width)
   const height = useThree((state) => state.size.height)
   const hasPlacedCamera = useRef(false)
-  const offsetX = preset.position[0] - preset.target[0]
-  const offsetY = preset.position[1] - preset.target[1]
-  const offsetZ = preset.position[2] - preset.target[2]
-  const presetDistance = Math.hypot(offsetX, offsetY, offsetZ)
-  const startingAzimuth = Math.atan2(offsetX, offsetZ)
-
-  // Keep the exploratory, fly-around feeling without allowing a full trip
-  // behind the television set. Each art-directed shot gets a 180-degree
-  // horizontal orbit centered on its exported starting position.
-  const horizontalHalfArc = Math.PI / 2
 
   // Blender exports horizontal FOV; three.js wants vertical, aspect-dependent.
   useEffect(() => {
@@ -59,14 +49,9 @@ export function CameraRig({ preset, allowManualOrbit = true }: CameraRigProps) {
       makeDefault
       smoothTime={0.55}
       draggingSmoothTime={0.12}
-      minDistance={Math.max(1.25, presetDistance * 0.28)}
-      maxDistance={Math.min(22, presetDistance * 1.65)}
-      minPolarAngle={0.12}
-      maxPolarAngle={Math.PI * 0.58}
-      minAzimuthAngle={startingAzimuth - horizontalHalfArc}
-      maxAzimuthAngle={startingAzimuth + horizontalHalfArc}
-      truckSpeed={0}
-      dollySpeed={0.65}
+      minDistance={0.4}
+      maxDistance={22}
+      maxPolarAngle={Math.PI / 2.03}
       enabled={allowManualOrbit}
     />
   )
