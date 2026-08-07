@@ -1,9 +1,14 @@
 import { Canvas } from '@react-three/fiber'
 import { ACESFilmicToneMapping, SRGBColorSpace } from 'three'
+import type { CameraPreset } from '../../types/scene'
 import { ApartmentScene } from './ApartmentScene'
 import { SceneErrorBoundary } from './SceneErrorBoundary'
 
-export function ApartmentExperience() {
+interface ApartmentExperienceProps {
+  readonly preset: CameraPreset
+}
+
+export function ApartmentExperience({ preset }: ApartmentExperienceProps) {
   return (
     <SceneErrorBoundary>
       <Canvas
@@ -17,7 +22,7 @@ export function ApartmentExperience() {
         }}
       >
         <color attach="background" args={['#151719']} />
-        <ApartmentScene />
+        <ApartmentScene preset={preset} />
       </Canvas>
     </SceneErrorBoundary>
   )

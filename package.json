@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run cameras:verify && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc -b --pretty false"
+    "typecheck": "tsc -b --pretty false",
+    "cameras:verify": "node tools/verify-camera-presets.mjs",
+    "cameras:export": "/Applications/Blender.app/Contents/MacOS/Blender --background \"$HOME/Downloads/seinfeld-apartment 2/source/apartment_cinematic.blend\" --online-mode --python tools/blender/export_camera_presets.py"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",

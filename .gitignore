@@ -6,3 +6,6 @@ dist
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# Large source assets staged for future milestones (not shipped)
+assets-staging/

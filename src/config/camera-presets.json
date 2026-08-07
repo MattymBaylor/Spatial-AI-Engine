@@ -1,0 +1,278 @@
+{
+  "$generated": "DO NOT EDIT BY HAND. Produced by tools/blender/export_camera_presets.py",
+  "generatedAt": "2026-08-04T05:15:27+00:00",
+  "sourceBlend": "/Users/matthewmartelli/Downloads/seinfeld-apartment 2/source/apartment_cinematic.blend",
+  "runtimeGlb": "public/assets/apartment/seinfeld_apartment.glb",
+  "glbRootScale": 0.7825469375,
+  "coordinateSpace": "three.js world space (Y-up), matching the loaded GLB",
+  "conversion": "three = glbRootScale * (blender_x, blender_z, -blender_y)",
+  "fovNote": "fovHorizontalDeg is authoritative; derive vertical FOV per canvas aspect at runtime.",
+  "presets": [
+    {
+      "name": "CoffeeTable",
+      "blenderObject": "Cam_CoffeeTable",
+      "position": [
+        -5.947357,
+        1.721603,
+        6.651649
+      ],
+      "target": [
+        -3.33678,
+        0.563434,
+        5.387836
+      ],
+      "fovHorizontalDeg": 58.7155,
+      "fovVerticalDeg16x9": 35.1154,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 32.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/CoffeeTable.png",
+      "blender": {
+        "location": [
+          -7.6,
+          -8.5,
+          2.2
+        ],
+        "target": [
+          -4.264,
+          -6.885,
+          0.72
+        ],
+        "rotationEulerXYZDeg": [
+          68.2325,
+          0.0,
+          -64.1678
+        ]
+      }
+    },
+    {
+      "name": "Door",
+      "blenderObject": "Cam_Door",
+      "position": [
+        -2.66066,
+        2.347641,
+        2.817169
+      ],
+      "target": [
+        0.404577,
+        1.643349,
+        -0.86941
+      ],
+      "fovHorizontalDeg": 48.4555,
+      "fovVerticalDeg16x9": 28.4093,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 40.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Door.png",
+      "blender": {
+        "location": [
+          -3.4,
+          -3.6,
+          3.0
+        ],
+        "target": [
+          0.517,
+          1.111,
+          2.1
+        ],
+        "rotationEulerXYZDeg": [
+          81.6431,
+          -0.0,
+          -39.7421
+        ]
+      }
+    },
+    {
+      "name": "Hero",
+      "blenderObject": "Cam_Hero",
+      "position": [
+        -2.731089,
+        2.269386,
+        7.301163
+      ],
+      "target": [
+        -1.721603,
+        1.212948,
+        1.565094
+      ],
+      "fovHorizontalDeg": 65.4705,
+      "fovVerticalDeg16x9": 39.7607,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 28.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Hero.png",
+      "blender": {
+        "location": [
+          -3.49,
+          -9.33,
+          2.9
+        ],
+        "target": [
+          -2.2,
+          -2.0,
+          1.55
+        ],
+        "rotationEulerXYZDeg": [
+          79.7191,
+          0.0,
+          -9.9812
+        ]
+      }
+    },
+    {
+      "name": "Kitchen",
+      "blenderObject": "Cam_Kitchen",
+      "position": [
+        -1.17382,
+        2.50415,
+        3.912735
+      ],
+      "target": [
+        4.304008,
+        1.878113,
+        3.521461
+      ],
+      "fovHorizontalDeg": 54.4322,
+      "fovVerticalDeg16x9": 32.2688,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 35.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Kitchen.png",
+      "blender": {
+        "location": [
+          -1.5,
+          -5.0,
+          3.2
+        ],
+        "target": [
+          5.5,
+          -4.5,
+          2.4
+        ],
+        "rotationEulerXYZDeg": [
+          83.4966,
+          0.0,
+          -85.9144
+        ]
+      }
+    },
+    {
+      "name": "Overview",
+      "blenderObject": "Cam_Overview",
+      "position": [
+        -3.130188,
+        6.260375,
+        11.346931
+      ],
+      "target": [
+        -2.347641,
+        0.939056,
+        1.565094
+      ],
+      "fovHorizontalDeg": 54.4322,
+      "fovVerticalDeg16x9": 32.2688,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 35.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Overview.png",
+      "blender": {
+        "location": [
+          -4.0,
+          -14.5,
+          8.0
+        ],
+        "target": [
+          -3.0,
+          -2.0,
+          1.2
+        ],
+        "rotationEulerXYZDeg": [
+          61.5305,
+          -0.0,
+          -4.5739
+        ]
+      }
+    },
+    {
+      "name": "Sofa",
+      "blenderObject": "Cam_Sofa",
+      "position": [
+        -4.695282,
+        2.112877,
+        6.573394
+      ],
+      "target": [
+        -3.688144,
+        0.74342,
+        3.430686
+      ],
+      "fovHorizontalDeg": 54.4322,
+      "fovVerticalDeg16x9": 32.2688,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 35.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Sofa.png",
+      "blender": {
+        "location": [
+          -6.0,
+          -8.4,
+          2.7
+        ],
+        "target": [
+          -4.713,
+          -4.384,
+          0.95
+        ],
+        "rotationEulerXYZDeg": [
+          67.4631,
+          -0.0,
+          -17.769
+        ]
+      }
+    },
+    {
+      "name": "Window",
+      "blenderObject": "Cam_Window",
+      "position": [
+        -3.912735,
+        2.425895,
+        1.721603
+      ],
+      "target": [
+        -8.725398,
+        2.582405,
+        0.524306
+      ],
+      "fovHorizontalDeg": 54.4322,
+      "fovVerticalDeg16x9": 32.2688,
+      "near": 0.039127,
+      "far": 156.509387,
+      "lensMM": 35.0,
+      "sensorWidthMM": 36.0,
+      "preview": "/assets/camera-previews/Window.png",
+      "blender": {
+        "location": [
+          -5.0,
+          -2.2,
+          3.1
+        ],
+        "target": [
+          -11.15,
+          -0.67,
+          3.3
+        ],
+        "rotationEulerXYZDeg": [
+          91.8076,
+          -0.0,
+          76.0296
+        ]
+      }
+    }
+  ]
+}

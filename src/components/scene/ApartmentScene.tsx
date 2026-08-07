@@ -1,32 +1,25 @@
-import { ContactShadows, OrbitControls, PerspectiveCamera } from '@react-three/drei'
+import { ContactShadows } from '@react-three/drei'
 import { Suspense } from 'react'
-import { DEFAULT_CAMERA_PRESET } from '../../config/cameraPresets'
+import type { CameraPreset } from '../../types/scene'
 import { ApartmentModel } from './ApartmentModel'
+import { CameraRig } from './CameraRig'
 import { SceneLighting } from './SceneLighting'
 import { SceneLoading } from './SceneLoading'
 
-export function ApartmentScene() {
-  const preset = DEFAULT_CAMERA_PRESET
+interface ApartmentSceneProps {
+  readonly preset: CameraPreset
+}
 
+export function ApartmentScene({ preset }: ApartmentSceneProps) {
   return (
     <>
-      <PerspectiveCamera makeDefault position={preset.position} fov={preset.fov} near={0.1} far={250} />
+      {/* Camera transform, FOV and clipping all come from Blender. */}
+      <CameraRig preset={preset} />
       <SceneLighting />
       <Suspense fallback={<SceneLoading />}>
         <ApartmentModel />
       </Suspense>
       <ContactShadows position={[0, -0.02, 0]} opacity={0.42} scale={20} blur={2.5} far={12} />
-      {import.meta.env.DEV && (
-        <OrbitControls
-          makeDefault
-          target={preset.target}
-          enableDamping
-          dampingFactor={0.08}
-          minDistance={1.5}
-          maxDistance={30}
-          maxPolarAngle={Math.PI / 2.02}
-        />
-      )}
     </>
   )
 }
